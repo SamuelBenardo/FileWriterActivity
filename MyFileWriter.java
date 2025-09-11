@@ -4,6 +4,11 @@ import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
     public static void main(String[] args) {
+        File dir = new File("Hello");
+        if (!dir.exists()) {
+            dir.mkdir();
+        }
+
         String data = "My name is Samuel Benardo. I am German-American, but live mainly in Los Angeles. I am a 17 year old senior at Harvard-Westlake Highschool.";
         String fileName1 = "example.txt";
         String fileName2 = "example2.txt";
